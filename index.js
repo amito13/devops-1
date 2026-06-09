@@ -1,7 +1,8 @@
 import express from 'express';
 
 const app = express();
-app.get('/test', (req, res) => {
+app.get('/', (req, res) => {
+    console.log('Received a request at /');
      res.send('Hello World!');
 });
 
