@@ -26,7 +26,7 @@ jobs:
 
       - name: Build and push
         run: |
-          docker build -t amit131205/chaicode .
+          docker build -t amit131205/chaicode:tagname .
           docker push amit131205/chaicode:tagname
 
       - name: Deploy to ec2
