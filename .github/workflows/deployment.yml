@@ -27,7 +27,7 @@ jobs:
       - name: Build and push
         run: |
           docker build -t amit131205/chaicode .
-          docker push amit131205/chaicode
+          docker push amit131205/chaicode:tagname
 
       - name: Deploy to ec2
         uses: appleboy/ssh-action@master
